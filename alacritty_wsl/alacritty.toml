@@ -1,0 +1,45 @@
+[general]
+import = [
+#	"C:\\Users\\butya\\AppData\\Roaming\\alacritty\\themes\\moonlight_ii_vscode.toml"
+#	"C:\\Users\\butya\\AppData\\Roaming\\alacritty\\themes\\tokyo_night_storm.toml"
+#	"C:\\Users\\butya\\AppData\\Roaming\\alacritty\\themes\\rainbow.toml"
+	"C:\\Users\\butya\\AppData\\Roaming\\alacritty\\themes\\night_owl_copy.toml"
+#    "~/.config/alacritty/themes/themes/{theme}.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+COLORTERM = "truecolor"
+LANG = "en_US.UTF-8"
+
+#draw_bold_text_with_bright_colors = false
+
+#[hints]
+#enabled = false
+
+[font]
+size = 11
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[window]
+#отступ рабочей области от краев окна
+padding.x = 10
+padding.y = 10
+
+#прозрачность и размытие
+#decorations = "Full"
+opacity = 0.9
+# почему-то в wsl не получается заблюрить
+#blur = true
+
+[terminal.shell]
+program = "wsl"
+args = [
+	"-d",
+	"Ubuntu",
+	"--cd",
+	"~"
+]
